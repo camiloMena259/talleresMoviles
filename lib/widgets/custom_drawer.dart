@@ -102,6 +102,13 @@ class CustomDrawer extends StatelessWidget {
               context.go('/pokemons');
             },
           ),
+          ListTile(
+            leading: const Icon(Icons.play_circle_outline),
+            title: const Text('Ejercicio Async/Timer/Isolate'),
+            onTap: () {
+              context.go('/exercise');
+            },
+          ),
         ],
       ),
     );
