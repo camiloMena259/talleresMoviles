@@ -8,6 +8,7 @@ import '../views/future/future_view.dart';
 import '../views/isolate/isolate_view.dart';
 import '../views/pokemons/pokemon_detail_view.dart';
 import '../views/pokemons/pokemon_list_view.dart';
+import '../views/exercise/exercise_screen.dart';
 
 final GoRouter appRouter = GoRouter(
   routes: [
@@ -51,6 +52,12 @@ final GoRouter appRouter = GoRouter(
       path: '/isolate',
       name: 'isolate',
       builder: (context, state) => const IsolateView(),
+    ),
+    //!Ruta para ejercicio didactico
+    GoRoute(
+      path: '/exercise',
+      name: 'exercise',
+      builder: (context, state) => const ExerciseScreen(),
     ),
     //!Ruta para listaado de pokemones
     GoRoute(
